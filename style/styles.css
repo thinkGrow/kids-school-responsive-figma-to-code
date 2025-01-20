@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  /* width: 1440rem; */
+}
+
+.flex {
+  display: flex;
+}
+
+body,
+header {
+  max-width: 194rem; /* Matches the Figma width */
+  margin: 0 auto;
+  background-color: gray;
+  margin-right: 8.75rem;
+  margin-left: 8.75rem;
+}
+
+nav {
+  max-height: 72.5rem; /* Matches Figma height (converted to rem) */
+  width: 100%; /* Spans the full width of the layout */
+  justify-content: space-between;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  align-items: center;
+}
+
+nav .logo {
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+}
+
+nav .nav-list {
+  list-style-type: none;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav .nav-btn {
+  width: 12.3rem;
+}
+
+nav .nav-btn button {
+  color: white;
+  background-color: orange;
+  border-radius: 0.75rem;
+  border-style: none;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-right: 60.5px;
+  padding-left: 60.5px;
+}
