@@ -12,22 +12,28 @@
   display: flex;
 }
 
-body,
-header {
+body {
   max-width: 194rem; /* Matches the Figma width */
   margin: 0 auto;
-  background-color: gray;
+  /* background-color: gray; */
   margin-right: 8.75rem;
   margin-left: 8.75rem;
 }
 
+/* 
+-------------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>NAV
+-------------------------------------------------------------------
+*/
+
 nav {
   max-height: 72.5rem; /* Matches Figma height (converted to rem) */
-  width: 100%; /* Spans the full width of the layout */
+  width: 100%;
   justify-content: space-between;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   align-items: center;
+  margin: 0 auto;
 }
 
 nav .logo {
@@ -55,4 +61,47 @@ nav .nav-btn button {
   padding-bottom: 0.625rem;
   padding-right: 60.5px;
   padding-left: 60.5px;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+/* 
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>RESPONSIVE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+*/
+/* width 390px */
+@media screen and (max-width: 24.375rem) {
+  body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  nav .logo h1,
+  nav .nav-list,
+  nav .nav-btn {
+    display: none;
+  }
+
+  /* 
+  -------------------------------------------------------------------
+  >>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>NAV
+  -------------------------------------------------------------------
+  */
+  nav .logo {
+    height: 46px;
+    width: 46px;
+  }
+
+  nav .hamburger img {
+    height: 30px;
+    width: 30px;
+    /* object-fit: cover; */
+  }
 }
