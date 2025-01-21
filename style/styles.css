@@ -70,7 +70,7 @@ nav {
 nav .logo {
   justify-content: center;
   align-items: center;
-  gap: 11px;
+  gap: 0.6875rem;
 }
 
 nav .nav-list {
@@ -78,8 +78,8 @@ nav .nav-list {
   justify-content: center;
   gap: 2rem;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 
 nav .nav-btn {
@@ -111,27 +111,28 @@ nav .hamburger {
 */
 
 .hero-container {
-  gap: 50px;
+  gap: 3.125rem;
   margin-right: 9rem;
   margin-left: 9rem;
   max-width: 100%;
+  justify-content: center;
 }
 
 .hero-content {
   flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .hero-content h1 {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 61px;
+  font-size: 3.5rem;
+  line-height: 3.8125rem;
 }
 
 .hero-content p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   /* line-height: 61px; */
 }
 
@@ -142,25 +143,25 @@ nav .hamburger {
 */
 
 .curriculum {
-  margin-top: 80px;
+  margin-top: 5rem;
   max-width: 100%;
   margin-right: 9rem;
   margin-left: 9rem;
   flex-direction: column;
 }
 
-.curriculum h2 {
+.curriculum h2,
+.stories h2 {
   font-weight: 700;
-  font-size: 46px;
-  line-height: 58px;
+  font-size: 2.875rem;
+  line-height: 3.625rem;
   text-align: center;
 }
 
 .curriculum .cards {
-  margin-top: 80px;
-
+  margin-top: 5rem;
   /* width: 100%; */
-  gap: 28px;
+  gap: 1.75rem;
   justify-content: center;
   /* background-color: gray; */
 }
@@ -168,49 +169,133 @@ nav .hamburger {
 .curriculum .card {
   flex-direction: column;
   justify-content: center;
-  min-width: 367.8px;
-  height: 477px;
+  min-width: 22.99rem;
+  height: 29.8125rem;
   background-color: beige;
   text-align: center;
-  gap: 32px;
-  border-radius: 19px;
+  gap: 2rem;
+  border-radius: 1.25rem;
 }
 
 .curriculum .card h3 {
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.5625rem;
+  line-height: 2rem;
 }
 
 .curriculum .card p {
   font-weight: 500;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 2rem;
   color: #808080;
   /* font-family: "Raleway", serif; */
 }
 
 .curriculum .card h4 {
   font-weight: 700;
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .curriculum .slider {
   /* background-color: gray; */
-  gap: 10px;
+  gap: 0.625rem;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 5rem;
   align-items: center;
 }
 
 .curriculum .slider button {
-  border-radius: 30px;
+  border-radius: 2rem;
   background-color: orange;
-  padding: 17px 20px 17px 20px;
+  padding: 1rem 1.25rem 1rem 1.25rem;
+  margin-bottom: 3.75rem;
 }
 
 /* 
+-------------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>STORIES
+-------------------------------------------------------------------
+*/
+
+.stories {
+  margin-top: 4.5rem;
+  max-width: 100%;
+  margin-right: 9rem;
+  margin-left: 9rem;
+}
+
+.stories .cards {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  grid-template-areas:
+    "card-1 card-2 card-3"
+    "card-1 card-4 card-5";
+  width: 100%;
+  height: 39.4rem;
+}
+
+.stories .cards img {
+  display: block;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.stories .cards h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.stories .cards .card {
+  border-radius: 1rem;
+}
+
+.stories .card-1 {
+  grid-area: card-1;
+  width: 33.75rem;
+  background-color: lightcoral;
+}
+
+.stories .card-1 h2 {
+  margin-top: 59px;
+  margin-bottom: 48px;
+  padding-right: 39px;
+  padding-left: 39px;
+  text-align: left;
+}
+
+.stories .card-1 p {
+  padding-right: 39px;
+  padding-left: 39px;
+}
+
+.stories .card-2 {
+  grid-area: card-2;
+  background-color: lightblue;
+}
+
+.stories .card-3 {
+  grid-area: card-3;
+  background-color: lightgreen;
+}
+
+.stories .card-4 {
+  grid-area: card-4;
+  background-color: lightgoldenrodyellow;
+}
+
+.stories .card-5 {
+  grid-area: card-5;
+  background-color: lightpink;
+}
+
+/*
+
+
+
+
 -------------------------------------------------------------------
 >>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>FOOTER
 -------------------------------------------------------------------
@@ -218,38 +303,42 @@ nav .hamburger {
 
 footer {
   background: skyblue;
-  padding-bottom: 180px;
-  padding-top: 120px;
-  padding-left: 140px;
-  padding-right: 228px;
-  margin-top: 80px;
+  padding-bottom: 11.25rem;
+  padding-top: 7.5rem;
+  padding-left: 8.75rem;
+  padding-right: 8.75rem;
+  margin-top: 5rem;
+  max-width: 100%;
 }
 
 .footer-container {
-  max-width: 1070px;
-  margin-right: 9rem;
-  margin-left: 9rem;
+  /* max-width: 1070px; */
+  max-width: 100%;
+  /* margin-right: 9rem;
+  margin-left: 9rem; */
+  /* justify-content: center; */
 
   /* background: skyblue; */
   /* color: white; */
 }
 
 .footer-title-box {
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .footer-container .footer-title-box h1 {
   font-weight: 700;
-  font-size: 42px;
-  line-height: 40px;
+  font-size: 2.625rem;
+  line-height: 2.5rem;
   color: white;
+
   /* background-color: black; */
 }
 
 .footer-container .footer-title-box .footer-img-container {
   /* height: 100%; */
-  height: 82px;
-  width: 82px;
+  height: 5rem;
+  width: 5rem;
 }
 
 footer .footer-title-box .footer-img-container img {
@@ -259,50 +348,50 @@ footer .footer-title-box .footer-img-container img {
 
 .footer-content p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
-  margin-top: 35px;
+  margin-top: 2.15rem;
 
   /* background-color: black; */
 }
 
 .footer-content {
-  max-width: 30vw;
-  margin-right: 172px;
+  max-width: 30rem;
+  margin-right: 10.75rem;
 }
 
 .footer-list {
-  margin-right: 172px;
+  margin-right: 10.75rem;
   flex-direction: column;
 }
 
 .footer-container h3 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: white;
 }
 
 .footer-container .footer-list ul {
-  margin-top: 32px;
+  margin-top: 2rem;
   list-style-type: none;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .footer-container .footer-list ul li {
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
 .footer-container .footer-socials ul {
   list-style-type: none;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .socials {
-  gap: 10px;
-  margin-top: 32px;
+  gap: 0.625rem;
+  margin-top: 2rem;
 }
 
 /* 
@@ -328,7 +417,8 @@ footer .footer-title-box .footer-img-container img {
   }
 
   .hero-container,
-  .curriculum .cards {
+  .curriculum .cards,
+  .footer-container {
     flex-direction: column;
   }
 
@@ -367,5 +457,23 @@ footer .footer-title-box .footer-img-container img {
   .curriculum {
     justify-content: center;
     align-items: center;
+  }
+
+  footer {
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+  }
+
+  .footer-container {
+    padding-top: 26px;
+    justify-content: center;
+    gap: 32px;
+    /* align-items: center; */
+  }
+
+  .footer-content,
+  .footer-list {
+    margin: 0px;
   }
 }
