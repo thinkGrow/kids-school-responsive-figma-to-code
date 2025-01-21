@@ -42,11 +42,11 @@ body {
 .btn-primary button {
   background-color: black;
   color: white;
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 0.75rem;
+  padding: 0.625rem;
   font-weight: 700;
   line-height: 30px;
-  padding: 10px 47px;
+  padding: 0.625rem 47px;
 }
 
 /* 
@@ -499,6 +499,10 @@ footer .footer-title-box .footer-img-container img {
     align-items: center;
   }
 
+  .stories .cards .card-1{
+    display: none;
+  }
+
   .stories .cards {
     display: grid;
     /* justify-content: center; */
@@ -507,20 +511,20 @@ footer .footer-title-box .footer-img-container img {
       "card-4 card-5";
     width: 100%;
     height: 39.4rem;
-    margin-top: 80px;
+    margin-top: 5.0rem;
     text-align: left;
   }
 
   footer {
     margin: 0px;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     padding: 0px;
   }
 
   .footer-container {
-    padding-top: 26px;
+    padding-top: 1.625rem;
     justify-content: center;
-    gap: 32px;
+    gap: 2;
     /* align-items: center; */
   }
 
