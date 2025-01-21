@@ -43,6 +43,16 @@ body {
   font-family: "Quicksand", sherif;
 }
 
+.btn-primary button {
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 700px;
+  line-height: 30px;
+  padding: 10px 47px;
+}
+
 /* 
 -------------------------------------------------------------------
 >>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>NAV
@@ -109,10 +119,26 @@ nav .hamburger {
   gap: 24px;
 }
 
-.hero-container h1 {
+.hero-content h1 {
   font-weight: 700px;
   font-size: 56px;
   line-height: 61px;
+}
+
+.hero-content p {
+  font-weight: 400px;
+  font-size: 20px;
+  /* line-height: 61px; */
+}
+
+/* 
+-------------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>CURRICULUM
+-------------------------------------------------------------------
+*/
+
+.curriculum {
+  margin-top: 80px;
 }
 
 /* 
@@ -137,6 +163,10 @@ nav .hamburger {
     display: none;
   }
 
+  .hero-container {
+    flex-direction: column;
+  }
+
   /* 
   -------------------------------------------------------------------
   >>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>NAV
@@ -151,5 +181,21 @@ nav .hamburger {
     height: 30px;
     width: 30px;
     /* object-fit: cover; */
+  }
+
+  /* 
+  -------------------------------------------------------------------
+  >>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>HERO
+  -------------------------------------------------------------------
+  */
+
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-img img {
+    width: 100%;
   }
 }
