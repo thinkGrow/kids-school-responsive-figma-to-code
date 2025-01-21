@@ -5,14 +5,14 @@
   --violet: #5d58ef;
 }
 
-.quicksand-font-main {
+.quicksand-main {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
   font-style: normal;
 }
 
-.raleway-font-second {
+.raleway-second {
   font-family: "Raleway", serif;
   font-optical-sizing: auto;
   /* font-weight: <weight>; */
@@ -48,7 +48,7 @@ body {
   color: white;
   border-radius: 12px;
   padding: 10px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 30px;
   padding: 10px 47px;
 }
@@ -94,7 +94,7 @@ nav .nav-btn button {
   padding-bottom: 0.625rem;
   padding-right: 60.5px;
   padding-left: 60.5px;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 20px;
   line-height: 30px;
 }
@@ -120,13 +120,13 @@ nav .hamburger {
 }
 
 .hero-content h1 {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 56px;
   line-height: 61px;
 }
 
 .hero-content p {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 20px;
   /* line-height: 61px; */
 }
@@ -139,6 +139,66 @@ nav .hamburger {
 
 .curriculum {
   margin-top: 80px;
+}
+
+.curriculum h2 {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 58px;
+  text-align: center;
+}
+
+.curriculum .cards {
+  margin-top: 80px;
+  width: 100%;
+  gap: 28px;
+  justify-content: center;
+  background-color: gray;
+}
+
+.curriculum .card {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 367.8px;
+  height: 477px;
+  background-color: beige;
+  text-align: center;
+  gap: 32px;
+  border-radius: 19px;
+}
+
+.curriculum .card h3 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.curriculum .card p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  color: #808080;
+  /* font-family: "Raleway", serif; */
+}
+
+.curriculum .card h4 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.curriculum .slider {
+  /* background-color: gray; */
+  gap: 10px;
+  justify-content: center;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.curriculum .slider button {
+  border-radius: 30px;
+  background-color: orange;
+  padding: 17px 20px 17px 20px;
 }
 
 /* 
