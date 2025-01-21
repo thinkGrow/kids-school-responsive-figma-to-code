@@ -212,6 +212,40 @@ nav .hamburger {
 
 /* 
 -------------------------------------------------------------------
+>>>>>>>>>>>>>>>>>>>>>>>>SECTION>>>>>>>>>FOOTER
+-------------------------------------------------------------------
+*/
+
+footer {
+  margin-top: 80px;
+  max-width: 1070px;
+  margin-right: 9rem;
+  margin-left: 9rem;
+  margin-bottom: 180px;
+}
+
+.footer-content {
+  max-width: 406px;
+  margin-right: 172px;
+}
+
+.footer-list {
+  margin-right: 172px;
+  flex-direction: column;
+}
+
+footer .footer-list ul {
+  list-style-type: none;
+  flex-direction: column;
+}
+
+footer .footer-socials ul {
+  list-style-type: none;
+  gap: 10px;
+}
+
+/* 
+-------------------------------------------------------------------
 
 -------------------------------------------------------------------
 >>>>>>>>>>>>>>>>>>>>>>>>RESPONSIVE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
