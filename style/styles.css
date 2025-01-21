@@ -35,11 +35,10 @@
 }
 
 body {
-  max-width: 194rem; /* Matches the Figma width */
-  margin: 0 auto;
-  /* background-color: gray; */
-  margin-right: 8.75rem;
-  margin-left: 8.75rem;
+  min-width: 90rem;
+  /* margin: 0 auto; */
+  /* width: 100%; */
+
   font-family: "Quicksand", sherif;
 }
 
@@ -61,12 +60,14 @@ body {
 
 nav {
   max-height: 72.5rem; /* Matches Figma height (converted to rem) */
-  width: 100%;
+  max-width: 100%;
   justify-content: space-between;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   align-items: center;
-  margin: 0 auto;
+  margin-right: 9rem;
+  margin-left: 9rem;
+  /* margin: 0 auto; */
 }
 
 nav .logo {
@@ -79,6 +80,9 @@ nav .nav-list {
   list-style-type: none;
   justify-content: center;
   gap: 2rem;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 nav .nav-btn {
@@ -111,6 +115,9 @@ nav .hamburger {
 
 .hero-container {
   gap: 50px;
+  margin-right: 9rem;
+  margin-left: 9rem;
+  max-width: 100%;
 }
 
 .hero-content {
@@ -139,6 +146,9 @@ nav .hamburger {
 
 .curriculum {
   margin-top: 80px;
+  max-width: 100%;
+  margin-right: 9rem;
+  margin-left: 9rem;
 }
 
 .curriculum h2 {
@@ -150,16 +160,17 @@ nav .hamburger {
 
 .curriculum .cards {
   margin-top: 80px;
-  width: 100%;
+
+  /* width: 100%; */
   gap: 28px;
   justify-content: center;
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 .curriculum .card {
   flex-direction: column;
   justify-content: center;
-  max-width: 367.8px;
+  min-width: 367.8px;
   height: 477px;
   background-color: beige;
   text-align: center;
@@ -223,7 +234,8 @@ nav .hamburger {
     display: none;
   }
 
-  .hero-container {
+  .hero-container,
+  .curriculum {
     flex-direction: column;
   }
 
