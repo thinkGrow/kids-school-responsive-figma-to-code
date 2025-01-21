@@ -35,10 +35,7 @@
 }
 
 body {
-  min-width: 90rem;
-  /* margin: 0 auto; */
-  /* width: 100%; */
-
+  /* max-width: 90rem; */
   font-family: "Quicksand", sherif;
 }
 
@@ -149,6 +146,7 @@ nav .hamburger {
   max-width: 100%;
   margin-right: 9rem;
   margin-left: 9rem;
+  flex-direction: column;
 }
 
 .curriculum h2 {
@@ -235,7 +233,7 @@ nav .hamburger {
   }
 
   .hero-container,
-  .curriculum {
+  .curriculum .cards {
     flex-direction: column;
   }
 
@@ -269,5 +267,10 @@ nav .hamburger {
 
   .hero-img img {
     width: 100%;
+  }
+
+  .curriculum {
+    justify-content: center;
+    align-items: center;
   }
 }
