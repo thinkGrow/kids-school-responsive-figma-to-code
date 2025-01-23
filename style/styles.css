@@ -332,7 +332,7 @@ nav .hamburger {
   width: auto;
   height: auto;
   /* max-width: 38rem; */
-  background-color: lightcoral;
+  background-color: white;
   padding: 0px;
 }
 
@@ -361,12 +361,12 @@ nav .hamburger {
 
 .stories .card-3 {
   grid-area: card-3;
-  background-color: lightgreen;
+  background-color: white;
 }
 
 .card-2 {
   grid-area: card-2;
-  background-color: lightblue;
+  background-color: white;
 }
 
 .card-2,
@@ -401,12 +401,12 @@ nav .hamburger {
 
 .stories .card-4 {
   grid-area: card-4;
-  background-color: lightgoldenrodyellow;
+  background-color: white;
 }
 
 .stories .card-5 {
   grid-area: card-5;
-  background-color: lightpink;
+  background-color: white;
 }
 
 .stories .btn-primary {
