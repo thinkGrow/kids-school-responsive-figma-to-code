@@ -33,7 +33,7 @@
 body {
   background: linear-gradient(
       to bottom,
-      transparent 40%,
+      transparent 30%,
       rgba(255, 165, 0, 0.3) 75%,
       rgba(255, 165, 0, 0.5) 100%
     ),
@@ -42,6 +42,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 0;
 }
 
 .flex {
@@ -211,8 +212,16 @@ nav .hamburger {
   width: auto;
   gap: 1.75rem;
   justify-content: center;
+
   /* background-color: gray; */
 }
+
+/* .curriculum .card .card-img-container {
+  width: 50%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+} */
 
 .curriculum .card {
   flex-direction: column;
@@ -220,10 +229,31 @@ nav .hamburger {
   width: auto;
   /* min-width: 22.99rem; */
   height: 29.8125rem;
-  background-color: beige;
   text-align: center;
   gap: 2rem;
   border-radius: 1.25rem;
+
+  /* background: linear-gradient(
+      to bottom,
+      rgba(115, 209, 247, 0.5) 0%,
+      rgba(115, 209, 247, 0.4) 5%,
+      transparent 33%
+    ),
+    white;
+  background-size: cover;  */
+  /* gray; */
+  /* z-index: 1; */
+}
+
+.curriculum .card {
+  background: linear-gradient(
+      to bottom,
+      rgba(115, 209, 247, 0.5) 0%,
+      rgba(115, 209, 247, 0.4) 5%,
+      transparent 33%
+    ),
+    white;
+  background-size: cover;
 }
 
 .curriculum .card h3 {
