@@ -3,6 +3,7 @@
 /* Define variables */
 :root {
   --violet: #5d58ef;
+  --green: #95b226;
 }
 
 .quicksand-main {
@@ -279,7 +280,7 @@ nav .hamburger {
   font-size: 1rem;
   line-height: 2rem;
   color: #808080;
-  /* font-family: "Raleway", serif; */
+  font-family: "Raleway", serif;
 }
 
 .curriculum .card h4 {
@@ -346,6 +347,40 @@ nav .hamburger {
   /* max-width: 38rem; */
   background-color: white;
   padding: 0px;
+  position: relative;
+}
+
+#date-badge,
+#date-badge-2,
+#date-badge-3 {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px 18px 10px 18px;
+  line-height: 28px;
+  border-radius: 47px;
+  margin-left: 2.26vw;
+  margin-top: -2.5vh;
+  background: skyblue;
+  /* background: var(--violet); */
+}
+
+#date-badge-2 {
+  margin-left: 2.26vw;
+  margin-top: 16vh;
+  background: skyblue;
+  background-color: var(--green);
+}
+
+#date-badge-3 {
+  margin-left: 2.26vw;
+  margin-top: -3vh;
+  background: skyblue;
+  background-color: var(--violet);
+}
+
+.stories .card-img-container {
+  position: relative;
 }
 
 .stories .card-1 img {
@@ -353,10 +388,10 @@ nav .hamburger {
 }
 
 .stories .card-1 h2 {
-  margin-top: 3.6875rem;
-  margin-bottom: 3.6875rem;
-  padding-right: 3.6875rem;
-  padding-left: 3.6875rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-right: 2.4375rem;
+  padding-left: 2.4375rem;
   text-align: left;
 }
 
@@ -626,6 +661,33 @@ footer .footer-title-box .footer-img-container img {
     margin-top: 5rem;
     text-align: left;
     justify-content: center;
+  }
+
+  #date-badge,
+  #date-badge-2,
+  #date-badge-3 {
+    position: absolute;
+    font-size: 0.5rem;
+    font-weight: 400;
+    padding: 5px 9px 5px 9px;
+    line-height: 17px;
+    border-radius: 47px;
+    margin-left: 2.26vw;
+    margin-top: -2.5vh;
+    background: var(--violet);
+    color: white;
+  }
+
+  #date-badge-2 {
+    margin-left: 2.26vw;
+    margin-top: 17.5vh;
+    background: var(--green);
+  }
+
+  #date-badge-3 {
+    margin-left: 2.26vw;
+    margin-top: -1.5vh;
+    background: var(--violet);
   }
 
   /* .stories {
