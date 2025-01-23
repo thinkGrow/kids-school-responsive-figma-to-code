@@ -49,6 +49,18 @@ body {
   display: flex;
 }
 
+marquee {
+  background-color: skyblue;
+  border: 2px solid orange;
+  font-weight: 700;
+  text-transform:uppercase;
+}
+marquee p {
+  /* background-color: black; */
+  color: var(--violet);
+  font-size: large;
+}
+
 main,
 nav,
 .footer-container {
@@ -76,7 +88,7 @@ nav,
   padding: 0.625rem;
   font-weight: 700;
   line-height: 1.875rem;
-  padding: 0.625rem 2.94rem;
+  padding: 0.625rem 3.94rem;
 }
 
 /* 
@@ -414,6 +426,10 @@ nav .hamburger {
   justify-content: center;
 }
 
+.stories .btn-primary button {
+  padding: 0.625rem 3.94rem;
+}
+
 /*
 
 
@@ -481,11 +497,11 @@ footer .footer-title-box .footer-img-container img {
 
 .footer-content {
   max-width: 30rem;
-  margin-right: 10.75rem;
+  margin-right: 15%;
 }
 
 .footer-list {
-  margin-right: 10.75rem;
+  margin-right: 15%;
   flex-direction: column;
 }
 
@@ -633,7 +649,7 @@ footer .footer-title-box .footer-img-container img {
 
   .card-2 {
     grid-area: card-2;
-    background-color: lightblue;
+    background-color: white;
   }
 
   .card-2,
@@ -675,12 +691,12 @@ footer .footer-title-box .footer-img-container img {
 
   .stories .card-4 {
     grid-area: card-4;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
   }
 
   .stories .card-5 {
     grid-area: card-5;
-    background-color: lightpink;
+    background-color: white;
   }
 
   footer {
@@ -698,12 +714,21 @@ footer .footer-title-box .footer-img-container img {
   .footer-container {
     padding-top: 1.625rem;
     justify-content: center;
-    gap: 2;
+    gap: 5vh;
     /* align-items: center; */
   }
 
   .footer-content,
   .footer-list {
     margin: 0px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 874px) {
+  .socials {
+    display: grid;
+    grid-template-areas:
+      "a1 a2"
+      "a3 a4";
   }
 }
