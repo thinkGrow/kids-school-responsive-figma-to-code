@@ -407,7 +407,7 @@ footer {
 .footer-container .footer-title-box .footer-img-container {
   /* height: 100%; */
 
-  /* Or use 'contain' for showing the full image */
+ /* Or use 'contain' for showing the full image */
 
   /* height: 5rem;
   width: 5rem; */
@@ -525,6 +525,10 @@ footer .footer-title-box .footer-img-container img {
     text-align: center;
   }
 
+  .hero-content{
+    width: 100%;
+  }
+
   .hero-img img {
     width: 100%;
     height: auto; /* OR set height to a specific value if needed */
@@ -549,7 +553,7 @@ footer .footer-title-box .footer-img-container img {
     /* grid-template-columns: repeat(2, 1fr); */
     gap: 1rem;
     width: 100%;
-    max-height: 24rem;
+    height: auto;
     margin-top: 5rem;
     text-align: left;
     justify-content: center;
@@ -587,8 +591,8 @@ footer .footer-title-box .footer-img-container img {
   .card-3,
   .card-4,
   .card-5 {
-    width: 9rem;
-    height: 11.25rem;
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
 
@@ -601,8 +605,8 @@ footer .footer-title-box .footer-img-container img {
   .card-3 img,
   .card-4 img,
   .card-5 img {
-    width: 9rem;
-    height: 6.5625rem;
+    width: 100%;
+    height: auto;
   }
 
   .card-2 h2,
