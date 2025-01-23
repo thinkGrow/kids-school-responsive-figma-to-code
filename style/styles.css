@@ -34,9 +34,24 @@
   display: flex;
 }
 
-body {
-  /* max-width: 90rem; */
+main,
+nav,
+.footer-container {
+  /* .footer-container  */
+  /* margin-right: 8.75rem;
+  margin-left: 8.75rem;  */
+
+  width: 80vw;
+  margin: 0 auto;
   font-family: "Quicksand", sherif;
+
+  /* padding-right: 8.75rem;
+  padding-left: 8.75rem; */
+  /* padding: auto; */
+}
+
+.footer-container {
+  max-width: 80vw;
 }
 
 .btn-primary button {
@@ -45,8 +60,8 @@ body {
   border-radius: 0.75rem;
   padding: 0.625rem;
   font-weight: 700;
-  line-height: 30px;
-  padding: 0.625rem 47px;
+  line-height: 1.875rem;
+  padding: 0.625rem 2.94rem;
 }
 
 /* 
@@ -56,14 +71,19 @@ body {
 */
 
 nav {
-  max-height: 72.5rem; /* Matches Figma height (converted to rem) */
-  max-width: 100%;
+  max-height: 72.5rem;
   justify-content: space-between;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  align-items: center;
-  margin-right: 9rem;
-  margin-left: 9rem;
+  /* align-items: center; */
+  /* padding-right: 8.75rem;
+  padding-left: 8.75rem; */
+  /* width: auto; */
+  font-family: "Quicksand", sherif;
+  /* padding-right: 8.75rem;
+  padding-left: 8.75rem; */
+  /* margin-right: 9rem;
+  margin-left: 9rem; */
   /* margin: 0 auto; */
 }
 
@@ -93,11 +113,11 @@ nav .nav-btn button {
   border-style: none;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-  padding-right: 60.5px;
-  padding-left: 60.5px;
+  padding-right: 3.78125rem;
+  padding-left: 3.78125rem;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 
 nav .hamburger {
@@ -111,22 +131,37 @@ nav .hamburger {
 */
 
 .hero-container {
-  gap: 3.125rem;
-  margin-right: 9rem;
-  margin-left: 9rem;
-  max-width: 100%;
-  justify-content: center;
+  /* gap: 3.125rem; */
+  /* margin-right: 9rem;
+  margin-left: 9rem; */
+  /* max-width: 100%; */
+  /* width: 80vw; */
+  justify-content: space-between;
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+.hero-img {
+  width: 40%;
+}
+.hero-img img {
+  width: 100%;
+  height: 100%; /* OR set height to a specific value if needed */
+  object-fit: cover; /* Or use 'contain' for showing the full image */
 }
 
 .hero-content {
   flex-direction: column;
   justify-content: center;
   gap: 1.5rem;
+  width: 50%;
+  /* padding-right: 7.5%; */
 }
 
 .hero-content h1 {
   font-weight: 700;
   font-size: 3.5rem;
+  font-size: 350%;
   line-height: 3.8125rem;
 }
 
@@ -144,10 +179,9 @@ nav .hamburger {
 
 .curriculum {
   margin-top: 5rem;
-  max-width: 100%;
-  margin-right: 9rem;
-  margin-left: 9rem;
+  width: auto;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .curriculum h2,
@@ -160,7 +194,7 @@ nav .hamburger {
 
 .curriculum .cards {
   margin-top: 5rem;
-  /* width: 100%; */
+  width: auto;
   gap: 1.75rem;
   justify-content: center;
   /* background-color: gray; */
@@ -169,7 +203,8 @@ nav .hamburger {
 .curriculum .card {
   flex-direction: column;
   justify-content: center;
-  min-width: 22.99rem;
+  width: auto;
+  /* min-width: 22.99rem; */
   height: 29.8125rem;
   background-color: beige;
   text-align: center;
@@ -220,9 +255,7 @@ nav .hamburger {
 
 .stories {
   margin-top: 4.5rem;
-  max-width: 100%;
-  margin-right: 9rem;
-  margin-left: 9rem;
+  width: auto;
 }
 
 .stories .cards {
@@ -231,10 +264,11 @@ nav .hamburger {
   grid-template-areas:
     "card-1 card-2 card-3"
     "card-1 card-4 card-5";
-  width: 100%;
-  height: 39.4rem;
-  margin-top: 80px;
+  width: auto;
+  height: auto;
+  margin-top: 5rem;
   text-align: left;
+  gap: 1rem;
 }
 
 .stories .cards img {
@@ -250,32 +284,35 @@ nav .hamburger {
 
 .stories .card-1 {
   grid-area: card-1;
-  width: 38rem;
+  /* width: 38rem; */
+  width: auto;
+  height: auto;
+  /* max-width: 38rem; */
   background-color: lightcoral;
   padding: 0px;
 }
 
 .stories .card-1 img {
-  width: 38rem;
+  width: 100%;
 }
 
 .stories .card-1 h2 {
-  margin-top: 59px;
-  margin-bottom: 48px;
-  padding-right: 39px;
-  padding-left: 39px;
+  margin-top: 3.6875rem;
+  margin-bottom: 3.6875rem;
+  padding-right: 3.6875rem;
+  padding-left: 3.6875rem;
   text-align: left;
 }
 
 .stories .cards .card-1 h2 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 2.375rem;
 }
 
 .stories .card-1 p {
-  padding-right: 39px;
-  padding-left: 39px;
+  padding-right: 2.4375rem;
+  padding-left: 2.4375rem;
 }
 
 .stories .card-3 {
@@ -292,32 +329,29 @@ nav .hamburger {
 .card-3,
 .card-4,
 .card-5 {
-  width: 22rem;
-  height: 19rem;
+  /* width: 22rem; */
+  width: auto;
+  height: auto;
   object-fit: cover;
-}
-
-.card-2,
-.card-3 {
-  margin-bottom: 20px;
 }
 
 .card-2 img,
 .card-3 img,
 .card-4 img,
 .card-5 img {
-  width: 22rem;
-  height: 177px;
+  /* width: 22rem; */
+  width: 100%;
+  height: 11.0625rem;
 }
 
 .card-2 h2,
 .card-3 h2,
 .card-4 h2,
 .card-5 h2 {
-  font-weight: 700px;
-  font-size: 15px;
-  line-height: 28px;
-  padding: 38px;
+  font-weight: 43.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
+  padding: 2.375rem;
   text-align: left;
 }
 
@@ -345,21 +379,16 @@ footer {
   background: skyblue;
   padding-bottom: 11.25rem;
   padding-top: 7.5rem;
-  padding-left: 8.75rem;
-  padding-right: 8.75rem;
+  /* padding-left: 8.75rem;
+  padding-right: 8.75rem; */
   margin-top: 5rem;
-  max-width: 100%;
+  /* max-width: 100%; */
+  /* width: auto; */
+  /* margin-right: 8.75rem;
+  margin-left: 8.75rem; */
 }
 
 .footer-container {
-  /* max-width: 1070px; */
-  max-width: 100%;
-  /* margin-right: 9rem;
-  margin-left: 9rem; */
-  /* justify-content: center; */
-
-  /* background: skyblue; */
-  /* color: white; */
 }
 
 .footer-title-box {
@@ -377,13 +406,19 @@ footer {
 
 .footer-container .footer-title-box .footer-img-container {
   /* height: 100%; */
-  height: 5rem;
-  width: 5rem;
+
+  /* Or use 'contain' for showing the full image */
+
+  /* height: 5rem;
+  width: 5rem; */
 }
 
 footer .footer-title-box .footer-img-container img {
   /* height: 100%; */
   /* object-fit: cover; */
+  width: 100%;
+  height: 100%; /* OR set height to a specific value if needed */
+  object-fit: cover;
 }
 
 .footer-content p {
@@ -444,10 +479,10 @@ footer .footer-title-box .footer-img-container img {
 -------------------------------------------------------------------
 */
 /* width 390px */
-@media screen and (max-width: 24.375rem) {
+@media screen and (max-width: 767px) {
   body {
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   nav .logo h1,
@@ -468,13 +503,13 @@ footer .footer-title-box .footer-img-container img {
   -------------------------------------------------------------------
   */
   nav .logo {
-    height: 46px;
-    width: 46px;
+    height: 2.875rem;
+    width: 2.875rem;
   }
 
   nav .hamburger img {
-    height: 30px;
-    width: 30px;
+    height: 1.875rem;
+    width: 1.875rem;
     /* object-fit: cover; */
   }
 
@@ -492,6 +527,8 @@ footer .footer-title-box .footer-img-container img {
 
   .hero-img img {
     width: 100%;
+    height: auto; /* OR set height to a specific value if needed */
+    object-fit: cover; /* Or use 'contain' for showing the full image */
   }
 
   .curriculum {
@@ -499,7 +536,7 @@ footer .footer-title-box .footer-img-container img {
     align-items: center;
   }
 
-  .stories .cards .card-1{
+  .stories .cards .card-1 {
     display: none;
   }
 
@@ -509,16 +546,100 @@ footer .footer-title-box .footer-img-container img {
     grid-template-areas:
       "card-2 card-3"
       "card-4 card-5";
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 1rem;
     width: 100%;
-    height: 39.4rem;
-    margin-top: 5.0rem;
+    max-height: 24rem;
+    margin-top: 5rem;
+    text-align: left;
+    justify-content: center;
+  }
+
+  /* .stories {
+    margin-top: 4.5rem;
+    width: 100%;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  
+  .stories .cards img {
+    display: block;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+  }
+  
+  .stories .cards .card {
+    border-radius: 1rem;
+  }  
+
+  .stories .card-3 {
+    grid-area: card-3;
+    background-color: lightgreen;
+  } */
+
+  .card-2 {
+    grid-area: card-2;
+    background-color: lightblue;
+  }
+
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5 {
+    width: 9rem;
+    height: 11.25rem;
+    object-fit: cover;
+  }
+
+  .card-2,
+  .card-3 {
+    margin-bottom: 1.25rem;
+  }
+
+  .card-2 img,
+  .card-3 img,
+  .card-4 img,
+  .card-5 img {
+    width: 9rem;
+    height: 6.5625rem;
+  }
+
+  .card-2 h2,
+  .card-3 h2,
+  .card-4 h2,
+  .card-5 h2 {
+    font-weight: 700;
+    font-size: 0.5625rem;
+    line-height: 1rem;
+    /* padding: 2.375rem; */
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: left;
   }
 
+  .stories .card-4 {
+    grid-area: card-4;
+    background-color: lightgoldenrodyellow;
+  }
+
+  .stories .card-5 {
+    grid-area: card-5;
+    background-color: lightpink;
+  }
+
   footer {
-    margin: 0px;
+    width: auto;
+    font-family: "Quicksand", sherif;
+    /* margin-right: 8,75rem;
+    margin-left: 8.75rem; */
+    /* padding-right: 8.75rem;
+    padding-left: 8.75rem; */
+    /* margin: 0px; */
     margin-top: 2.5rem;
-    padding: 0px;
+    /* padding: 0px; */
   }
 
   .footer-container {
