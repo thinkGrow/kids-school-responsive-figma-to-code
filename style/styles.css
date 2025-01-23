@@ -53,7 +53,7 @@ marquee {
   background-color: skyblue;
   border: 2px solid orange;
   font-weight: 700;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 marquee p {
   /* background-color: black; */
@@ -603,6 +603,10 @@ footer .footer-title-box .footer-img-container img {
   .curriculum {
     justify-content: center;
     align-items: center;
+  }
+
+  .curriculum .slider {
+    display: none;
   }
 
   .stories .cards .card-1 {
