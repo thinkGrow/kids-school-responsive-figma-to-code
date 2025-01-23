@@ -30,6 +30,20 @@
   /* width: 1440rem; */
 }
 
+body {
+  background: linear-gradient(
+      to bottom,
+      transparent 40%,
+      rgba(255, 165, 0, 0.3) 75%,
+      rgba(255, 165, 0, 0.5) 100%
+    ),
+    url("../assets/bg.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .flex {
   display: flex;
 }
@@ -178,10 +192,10 @@ nav .hamburger {
 */
 
 .curriculum {
+  margin: 0 auto;
   margin-top: 5rem;
   width: auto;
   flex-direction: column;
-  margin: 0 auto;
 }
 
 .curriculum h2,
@@ -254,7 +268,7 @@ nav .hamburger {
 */
 
 .stories {
-  margin-top: 4.5rem;
+  margin-top: 2.5rem;
   width: auto;
 }
 
@@ -365,6 +379,11 @@ nav .hamburger {
   background-color: lightpink;
 }
 
+.stories .btn-primary {
+  margin-top: 7%;
+  justify-content: center;
+}
+
 /*
 
 
@@ -407,7 +426,7 @@ footer {
 .footer-container .footer-title-box .footer-img-container {
   /* height: 100%; */
 
- /* Or use 'contain' for showing the full image */
+  /* Or use 'contain' for showing the full image */
 
   /* height: 5rem;
   width: 5rem; */
@@ -525,7 +544,7 @@ footer .footer-title-box .footer-img-container img {
     text-align: center;
   }
 
-  .hero-content{
+  .hero-content {
     width: 100%;
   }
 
