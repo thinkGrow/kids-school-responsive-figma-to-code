@@ -367,7 +367,7 @@ nav .hamburger {
 
 #date-badge-2 {
   margin-left: 2.26vw;
-  margin-top: 16vh;
+  /* margin-top: 16vh; */
   background: skyblue;
   background-color: var(--green);
 }
@@ -422,8 +422,9 @@ nav .hamburger {
 .card-5 {
   /* width: 22rem; */
   width: auto;
-  height: auto;
+  /* height: auto; */
   object-fit: cover;
+  /* position: sticky; */
 }
 
 .card-2 img,
@@ -680,7 +681,7 @@ footer .footer-title-box .footer-img-container img {
 
   #date-badge-2 {
     margin-left: 2.26vw;
-    margin-top: 17.5vh;
+    /* margin-top: 17.5vh; */
     background: var(--green);
   }
 
