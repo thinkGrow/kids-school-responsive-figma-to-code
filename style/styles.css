@@ -68,7 +68,6 @@ nav,
   /* .footer-container  */
   /* margin-right: 8.75rem;
   margin-left: 8.75rem;  */
-
   width: 80vw;
   margin: 0 auto;
   font-family: "Quicksand", sherif;
@@ -148,7 +147,7 @@ nav .nav-btn button {
   line-height: 1.875rem;
 }
 
-nav .hamburger {
+.svg-container {
   display: none;
 }
 
@@ -587,8 +586,27 @@ footer .footer-title-box .footer-img-container img {
 
   nav .logo h1,
   nav .nav-list,
-  nav .nav-btn {
+  nav .nav-btn button {
     display: none;
+  }
+
+  .svg-container {
+    display: unset;
+    height: 30px;
+    width: 30px;
+  }
+
+  nav .nav-btn {
+    height: 1rem;
+    width: 1px;
+    padding-right: 10vw;
+  }
+
+  .svg-container img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    
   }
 
   .hero-container,
@@ -605,6 +623,10 @@ footer .footer-title-box .footer-img-container img {
   nav .logo {
     height: 2.875rem;
     width: 2.875rem;
+  }
+
+  svg {
+    display: unset;
   }
 
   nav .hamburger img {
