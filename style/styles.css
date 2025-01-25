@@ -89,6 +89,7 @@ nav,
   font-weight: 700;
   line-height: 1.875rem;
   padding: 0.625rem 3.94rem;
+  
 }
 
 /* 
@@ -462,7 +463,8 @@ nav .nav-btn button {
 }
 
 .stories .btn-primary button {
-  padding: 0.625rem 3.94rem;
+  padding: 0.625rem 4.5rem;
+  
 }
 
 /*
